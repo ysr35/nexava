@@ -1,0 +1,9 @@
+site_name: NEXAVA Documentation
+nav:
+  - Home: index.md
+  - English:
+      - Introduction: en/intro.md
+  - Türkçe:
+      - Giriş: tr/giris.md
+theme:
+  name: material
