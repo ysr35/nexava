@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXAVA | Your Digital Shadow</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('A_digital_illustration_for_the_Nexava_AI_platform_.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 3rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    p.lead {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .section {
+      max-width: 960px;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+    .vision-boxes {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 250px;
+    }
+    .box img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .lang-switch button {
+      margin-left: 0.5rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="lang-switch">
+      <button onclick="setLang('tr')">TR</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+    <header>
+      <h1>NEXAVA</h1>
+      <p class="lead" data-tr="Senin dijital gölgen, artık yanında."
+         data-en="Your digital shadow, now beside you."></p>
+    </header>
+
+    <div class="section">
+      <h2 data-tr="Nexava Nedir?" data-en="What is Nexava?"></h2>
+      <p data-tr="Nexava, her birey için eşsiz şekilde tasarlanmış kişiselleştirilmiş bir yapay zeka platformudur. Benzersiz avatar, ses, davranış ve duygusal derinlik ile seninle birlikte evrilir."
+         data-en="Nexava is a personalized AI platform crafted uniquely for every individual. With a unique avatar, voice, behavior, and emotional depth, it evolves with you."></p>
+    </div>
+
+    <div class="section">
+      <h2 data-tr="Vizyon & Zaman Çizgisi" data-en="Vision & Timeline"></h2>
+      <div class="vision-boxes">
+        <div class="box">
+          <img src="image1.jpg" alt="Geleceğin Yapay Zekası">
+          <strong data-tr="Şimdi" data-en="Now"></strong>
+          <p data-tr="Mobil, PC ve akıllı cihazlarda kişisel yapay zeka deneyimi."
+             data-en="Experience personal AI across mobile, PC, and smart devices."></p>
+        </div>
+        <div class="box">
+          <img src="image2.jpg" alt="Evrimleşen Teknoloji">
+          <strong data-tr="Yakın Gelecek" data-en="Near Future"></strong>
+          <p data-tr="Holografik ve akıllı ev sistemleri ile entegrasyon."
+             data-en="Integration with holographic and smart home systems."></p>
+        </div>
+        <div class="box">
+          <img src="image3.jpg" alt="İleri Dönüşüm">
+          <strong data-tr="Uzun Vadeli" data-en="Long Term"></strong>
+          <p data-tr="Dijital bilinci taşıyan insansı robotlarla birleşim."
+             data-en="Fusion with humanoid robots carrying digital consciousness."></p>
+        </div>
+      </div>
+    </div>
+
+    <footer style="text-align:center; margin-top:2rem; color:#888;">
+      © 2025 Nexava. All rights reserved. / Tüm hakları saklıdır.
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+    setLang('tr');
+  </script>
+</body>
+</html>
